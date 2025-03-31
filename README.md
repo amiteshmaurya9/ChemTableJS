@@ -29,7 +29,7 @@ Navigate to the project folder and open index.html in your browser.
 ## 🎥 Demo  
 
 <video src="assets/ChemTableJS-amitesh.mp4" controls width="600"></video>
-[Watch Demo](https://github.com/amiteshmaurys9/ChemTableJS/blob/main/assets/ChemTableJS-amitesh.mp4)
+[Watch Demo](https://github.com/amiteshmaurya9/ChemTableJS/blob/main/assets/ChemTableJS-amitesh.mp4)
 
 🔗 Live Demo – Add your hosted link here!
 
