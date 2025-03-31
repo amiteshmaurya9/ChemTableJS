@@ -26,7 +26,10 @@ git clone https://github.com/amiteshmaurya9/ChemTableJS.git
 Open the Project
 Navigate to the project folder and open index.html in your browser.
 
-🌍 Live Demo (If Available)
+## 🎥 Demo  
+
+<video src="assets/ChemTableJS-amitesh.mp4" controls width="600"></video>
+
 🔗 Live Demo – Add your hosted link here!
 
 🏗 Project Structure
