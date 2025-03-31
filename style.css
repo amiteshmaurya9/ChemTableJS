@@ -1,0 +1,222 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 2px;
+    margin-bottom: 20px;
+}
+
+.element {
+    background-color: #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.element:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.atomic-number {
+    font-size: 10px;
+    text-align: left;
+}
+
+.symbol {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mass {
+    font-size: 8px;
+}
+
+/* Element Categories */
+.alkali-metal { background-color: #ff6666; }
+.alkaline-earth { background-color: #ffdaa2; }
+.transition-metal { background-color: #ffc0c0; }
+.post-transition { background-color: #cccccc; }
+.metalloid { background-color: #cccc99; }
+.nonmetal { background-color: #a1ffa1; }
+.halogen { background-color: #ffff99; }
+.noble-gas { background-color: #c0ffff; }
+.lanthanide { background-color: #ffbfff; }
+.actinide { background-color: #ff99cc; }
+
+/* Empty grid spaces */
+.empty {
+    visibility: hidden;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 172vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.element-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-symbol {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.detail-name h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.detail-name p {
+    color: #666;
+}
+
+.detail-properties {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.property {
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.property-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.property-value {
+    font-size: 14px;
+}
+
+.lanthanide-row, .actinide-row {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .periodic-table {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    
+    .detail-properties {
+        grid-template-columns: 1fr;
+    }
+}
+/* ........................................ */
+
+
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .periodic-table {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    
+    .detail-properties {
+        grid-template-columns: 1fr;
+    }
+}
+

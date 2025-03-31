@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+        <h1>Periodic Table of Elements</h1>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color alkali-metal"></div>
+                <span>Alkali Metals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color alkaline-earth"></div>
+                <span>Alkaline Earth Metals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color transition-metal"></div>
+                <span>Transition Metals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color post-transition"></div>
+                <span>Post-Transition Metals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color metalloid"></div>
+                <span>Metalloids</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color nonmetal"></div>
+                <span>Nonmetals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color halogen"></div>
+                <span>Halogens</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color noble-gas"></div>
+                <span>Noble Gases</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color lanthanide"></div>
+                <span>Lanthanides</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color actinide"></div>
+                <span>Actinides</span>
+            </div>
+        </div>
+        
+        <div class="periodic-table" id="periodic-table"></div>
+        
+        <div class="modal" id="elementModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <div class="element-details" id="elementDetails"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="periodic-table" id="periodic-table"></div>
+        
+        <div class="modal" id="elementModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <div class="element-details" id="elementDetails"></div>
+            </div>
+        </div>
+    </div>
+
+   
+</body> 
+</html>
