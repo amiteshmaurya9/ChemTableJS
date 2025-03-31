@@ -22,7 +22,7 @@ Clone the Repository
 bash
 Copy
 Edit
-git clone https://github.com/your-username/ChemTableJS.git
+git clone https://github.com/amiteshmaurya9/ChemTableJS.git
 Open the Project
 Navigate to the project folder and open index.html in your browser.
 
